@@ -1,0 +1,96 @@
+Ruby
+
+ruby -v comando version
+
+variables
+
+camel_case
+lower
+upper
+
+snake_case estandar
+donde haya mas de una palabra usar guion bajo
+
+"Se recomienda sanke case para variables"
+ 
+"Se recomienda camel case para clases"
+
+ry 
+nombre_usuario = "Juan"
+
+pws 
+PS C:\Users\ANDAP> cd '.\Desktop\App Ruby'
+PS C:\Users\ANDAP\Desktop\App Ruby> ruby main.rb
+
+rb
+puts nombre_usuario
+
+nombre_usuario = "Juan"
+
+edad = 26
+
+puts edad+5
+
+puts 10.to_f/3.to_f
+
+
+cadenas de texto
+
+Interpolacion
+
+nombre_usuario = "Juan"
+
+puts nombre_usuario
+
+edad = 26
+
+puts edad+5
+
+puts 10.to_f/3.to_f
+
+puts "Hola" + " " + nombre_usuario
+
+puts "Hola #{nombre_usuario}, sean bienvenidos todos a un mundo real"
+
+Caracteres especiales \ slash
+
+puts "Hola #{nombre_usuario}, sean bienvenidos todos a \"un mundo real\""
+
+En ruby todos son objetos
+
+.methods
+
+Simbolos 
+"Es una cadena de texto inmutable" 
+
+Siempre se mantiene la misma llave
+
+Metodos
+
+ex
+def def cuadrado(numero)  
+    return numero*numero
+end
+
+Clases y objetos
+
+Programar pensando en abstraer la realidad y llevarla a la programacion
+
+initialize
+constructor
+ primero atribustos despues metodos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

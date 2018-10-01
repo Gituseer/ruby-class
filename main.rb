@@ -105,14 +105,139 @@
  
  #hashes es algo muy parecido a los objetos 
 
-persona = { "nombre" => "Juan", "edad" => 26 }
+#persona = { "nombre" => "Juan", "edad" => 26 }
 
-puts persona["edad"]
+#persona = {nombre: "Juan", edad: 26 }
 
-persona.each do |clave, valor|
-	puts "La clave es #{clave} y el valor es #{valor}"
+#puts persona["edad"]
 
+#persona.each do |clave, valor|
+	#puts "La clave es #{clave} y el valor es #{valor}"
+
+#end
+
+#puts persona.lenght
+#cuenta cantidad de posiciones en un hash
+
+#puts persona.has_key?("edad")
+#me indica si exite una llave dentro de un hash
+
+#puts persona.keys
+
+#puts persona[:nombre]
+
+#def cuadrado(numero)  
+    #return numero*numero
+#end
+
+#puts "Ingresa un numero:"
+#mi_numero=gets.chomp.to_f
+#puts "El cuadrado es: #{cuadrado (mi_numero)}"
+
+#def hola_personas(*personas)
+  #personas.each do |persona|
+    #puts "Hola #{persona}"
+
+  #end
+    
+#end
+
+#gente =['Jaime','Alberto','Pedro']
+
+#hola_personas('Jaime','Alberto','Pedro','Juan',*gente)
+#El operador splat convierte todos los parametros que reciba en un arrglo dentro del metodo 
+
+#def suma(numero_uno:,numero_dos:)
+  
+#return numero_uno+numero_dos
+#end
+
+#puts suma(numero_dos:4,numero_uno:7)
+
+#Los key words argument nos permiten bautizar los parametros de tal forma que yo los pueda enviar de la forma que yo quiera
+
+#puts suma(numero_dos:4)
+#Los keywords argument tambien pérmiten inicializar valores y este valor inicial, el metodo lo utiliza el numero que asigna el parametro 
+
+class Persona
+      attr_accessor :nombre, :edad 
+
+      def initialize(n,e)
+          self.nombre = n
+          self.edad = e
+      end       
+
+      def saludar
+        puts "Hola"
+
+
+      end
+        
 end
+
+class Alumno < Persona 
+
+  attr_accessor :codigo
+
+  def estudiar
+      puts "Estoy estudiando" 
+  
+  end
+
+  def saludar
+    super
+    puts "Profe"
+                     
+   end
+     
+end
+
+
+persona_uno = Persona.new("Juan",50)
+persona_dos = Persona.new("Maria",35)
+
+#persona_uno.nombre = "Juan"
+#persona_dos.nombre = "Maria"   
+ 
+persona_dos.saludar
+puts persona_uno.nombre
+puts"la edad de la persona es#{persona_uno.edad}"
+
+alumno_uno = Alumno.new("Jaimito",17)
+
+alumno_uno.estudiar
+alumno_uno.saludar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
